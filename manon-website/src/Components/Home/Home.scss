@@ -1,0 +1,219 @@
+body{
+    margin: 0;
+    padding: 0;
+};
+
+.home{
+    width: 500px;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #0077b6;
+    height: 500px;
+    align-self: center;
+    box-shadow: 0 5px 2px #013a63;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%   ;
+};
+
+.photo{
+    width: 150px;
+    height: 150px;
+    background-color: #4895ef;
+    border-radius: 50%;
+    margin-top: 60px;
+    margin-left: 75px;
+};
+
+.photo p{
+    text-align: center;
+};
+
+.bigTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 150;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 50px;
+    margin:0;
+    top: 0;
+    padding-top: 50px;
+    padding-left: 50px;
+
+};
+.cut-text {
+    $random-text: 'websites';
+    position: relative;
+    text-transform: uppercase;
+    font-size: 80px;
+    color: transparent;
+    font-weight: 400;
+    font-family: 'Catamaran', sans-serif;
+    font-style: italic;
+
+    &:after {
+      content: $random-text;
+      position: absolute;
+      left: -10px;
+      top: -2px;
+      color: white;
+      $path: polygon(0 25%, 100% 65%, 100% 100%, 0% 100%);
+      -webkit-clip-path: $path;
+      clip-path: $path;
+    }
+    
+    &:before {
+      content: $random-text;
+      position: absolute;
+      color: white;
+      $path: polygon(0 0, 110% 0, 100% 65%, 0 25%);
+      -webkit-clip-path: $path;
+      clip-path: $path;
+    }
+};
+
+.cut-app {
+    $random-text: 'Apps';
+    position: relative;
+    text-transform: uppercase;
+    font-size: 80px;
+    color: transparent;
+    font-weight: 400;
+    font-family: 'Catamaran', sans-serif;
+    font-style: italic;
+
+    &:after {
+      content: $random-text;
+      position: absolute;
+      left: -10px;
+      top: -2px;
+      color: white;
+      $path: polygon(0 25%, 100% 65%, 100% 100%, 0% 100%);
+      -webkit-clip-path: $path;
+      clip-path: $path;
+    }
+    
+    &:before {
+      content: $random-text;
+      position: absolute;
+      color: white;
+      $path: polygon(0 0, 110% 0, 100% 65%, 0 25%);
+      -webkit-clip-path: $path;
+      clip-path: $path;
+    }
+};
+
+.title{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5px;  
+    font-size: 16px;
+    font-weight: 150;
+    text-transform: uppercase;
+    padding-left: 50px;
+};
+
+.circleProject{
+    width: 150px;
+    background-color: #013a63;
+    height: 150px;
+    border-radius: 50%;
+    z-index: 20;
+    cursor: pointer;
+    box-shadow: 1px 3px 6px #0077b6;
+    background-size: cover;
+    background-repeat: 'no-repeat';
+};
+
+.circleProject:hover div{
+    cursor: pointer;
+}
+
+.circleProject p{
+    color: #fff;
+}
+
+.allCircle{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.websiteTitles{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.websiteTitles span{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.websiteCircle{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.appCircle{
+    display: inline-flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 50%; 
+}
+.innerCircle{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 80px;
+    text-align: center;
+}
+
+.line{
+    border-bottom:1px solid #b5e48c;
+    width: 350px;
+    margin-left: 0;
+    margin-top: 100px;
+}
+.circle-app{
+    width: 150px;
+    height: 150px;
+    margin-left: 88%;
+    z-index: 999;
+    bottom: 10em;
+    position: fixed;
+    box-shadow: 0 2px 8px #4895ef;
+    background-color: #d9ed92;
+    border-radius: 50%;
+}
+#video{
+    width:80%;
+    height: 250px;
+    z-index: -80;
+    position: absolute;
+}
+.projectTitle{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 200;
+    color: #b5e48c;
+    letter-spacing: 0.6em;
+    font-size: 60px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.groupTitles{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:100%;
+    margin-top: 5%;
+    justify-content: space-around;
+}
+.titleProject{
+    letter-spacing: 0.3em;
+    position: relative;
+    font-size: 20px;
+    text-shadow: 0px 1px #4895ef;
+}
