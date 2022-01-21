@@ -151,10 +151,31 @@
   border: none;
   border-radius: 15px;
   width: 130px;
+  text-decoration: none;
+  text-align: center;
   background: linear-gradient(253deg, #0cc898, #864fe1);
   cursor: pointer;
 }
-.buttonLink p {
+.buttonWebsite{
+  padding: 5px;
+  position: relative;
+  border: none;
+  border-radius: 15px;
+  width: 130px;
+  text-decoration: none;
+  text-align: center;
+  background: linear-gradient(150deg, #0077b6, #864fe1);
+  cursor: pointer;
+  margin: 15px;
+  padding: 15px;
+}
+.buttonWebsite p{
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+.buttonLink p{
   text-transform: uppercase;
   font-weight: 400;
   padding: 8px;

@@ -1,10 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import reactNativeIcon from "../../assets/reactNativeIcon.png";
 import vscode from '../../assets/vscode.png';
 import geneakaVideo from '../../assets/geneakaVideo.mp4'
 import gitIcons from '../../assets/gitIcons.png';
-function Geneaka() {
+import Contact from '../Contact/Contact';
+import { NavLink } from 'react-router-dom';
+
+export default function Geneaka() {
     return (
         <div>
             <div className='bigTitle'>
@@ -15,8 +18,8 @@ function Geneaka() {
                     <h4 className='resumeTitle'>En bref</h4>
                     <p className='textResume'>Généaka est une entreprise spécialisé dans la création des arbres généalogiques.</p>
                     <p className='textResume'>Ils avaient besoin d'un site web pour présenter les types d'abres et pour avoir la possibilité aux clients de demander un devis.</p>
-                    <a href='https://www.geneaka.fr' target='_blank'>
-                        Visiter le site
+                    <a href='https://www.geneaka.fr' className='buttonWebsite' target='_blank'>
+                        <p  style={{ color: '#fff' }}>Visiter le site</p>
                     </a>
                 </div>
                 <div className='videoGroup'>
@@ -37,10 +40,19 @@ function Geneaka() {
                     </span>
                 </div>
                 <p className='smallText'>N'hésitez pas à me contacter pour en savoir plus</p>
-                <button style={{ marginBottom: "20px", marginTop: "15px" }} className='buttonLink'><p style={{ color: '#fff' }}>Chat</p></button>
+                <NavLink
+                to="/contact" 
+                className="underlined">
+                <button 
+                style={{ marginBottom: "20px", marginTop: "15px" }} 
+                className='buttonLink'>
+                    <p style={{ color: '#fff' }}>
+                        Chat
+                    </p>
+                </button>
+                </NavLink>
             </div>
         </div>
     )
 }
 
-export default Geneaka

@@ -4,6 +4,7 @@ import mongodbicon from '../../assets/mongodbicon.png';
 import nodejsIcon from '../../assets/nodejsIcon.svg';
 import vscode from '../../assets/vscode.png';
 import gitIcons from '../../assets/gitIcons.png';
+import { NavLink } from 'react-router-dom';
 
 function BunnyFinder() {
     return (
@@ -44,7 +45,17 @@ function BunnyFinder() {
                     </span>
                 </div>
                 <p className='smallText'>N'hésitez pas à me contacter pour en savoir plus</p>
-                <button style={{ marginBottom: "20px", marginTop: "15px" }} className='buttonLink'><p style={{ color: '#fff' }}>Chat</p></button>
+                <NavLink
+                to="/contact" 
+                className="underlined">
+                <button 
+                style={{ marginBottom: "20px", marginTop: "15px" }} 
+                className='buttonLink'>
+                    <p style={{ color: '#fff' }}>
+                        Chat
+                    </p>
+                </button>
+                </NavLink>             
             </div>
         </div>
     )

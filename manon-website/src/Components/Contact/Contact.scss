@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.buttonsChat{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.cut-contact {
+    $random-text: 'Contact';
+    position: relative;
+    text-transform: uppercase;
+    font-size: 80px;
+    color: transparent;
+    font-weight: 400;
+    font-family: 'Catamaran', sans-serif;
+    font-style: italic;
+
+    &:after {
+      content: $random-text;
+      position: absolute;
+      left: -10px;
+      top: -2px;
+      color: white;
+      $path: polygon(0 25%, 100% 65%, 100% 100%, 0% 100%);
+      -webkit-clip-path: $path;
+      clip-path: $path;
+    }
+    
+    &:before {
+      content: $random-text;
+      position: absolute;
+      color: white;
+      $path: polygon(0 0, 110% 0, 100% 65%, 0 25%);
+      -webkit-clip-path: $path;
+      clip-path: $path;
+    }
+}
+.contactBox{
+    width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+    height: 100%;
+    background-color:#0077b6;
+    margin-bottom: 50px;
+}
+.contactBox p{
+    color: #fff;
+    line-height: 2;
+    letter-spacing: 0.1em;
+    padding: 3px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+.contactBox button{
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #864fe1;
+    border-radius: 10px;
+    width: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+}

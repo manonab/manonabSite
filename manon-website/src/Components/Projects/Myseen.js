@@ -5,7 +5,9 @@ import mongodbicon from '../../assets/mongodbicon.png';
 import nodejsIcon from '../../assets/nodejsIcon.svg';
 import vscode from '../../assets/vscode.png';
 import gitIcons from '../../assets/gitIcons.png';
-import myseenvideo01 from "../../assets/myseenvideo01.mp4"
+import myseenvideo01 from "../../assets/myseenvideo01.mp4";
+import { NavLink } from 'react-router-dom';
+
 function Myseen() {
     return (
         <div>
@@ -41,7 +43,17 @@ function Myseen() {
                 <span className='icons'><img src={vscode} className='reactLogo' style={{width:"40px"}} alt='vscode logo'/></span>
                 </div>
                 <p className='smallText'>N'hésitez pas à me contacter pour en savoir plus</p>
-                <button style={{marginBottom:"20px",marginTop:"15px"}}className='buttonLink'><p style={{color:'#fff'}}>Chat</p></button>
+                <NavLink
+                to="/contact" 
+                className="underlined">
+                <button 
+                style={{ marginBottom: "20px", marginTop: "15px" }} 
+                className='buttonLink'>
+                    <p style={{ color: '#fff' }}>
+                        Chat
+                    </p>
+                </button>
+                </NavLink>           
             </div>
         </div>
     )
