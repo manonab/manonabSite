@@ -1,26 +1,63 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom';
-import "./NavBar.css";
+import React, {useState} from 'react'
+// import "./NavBar.css";
+import {
+    NavbarContainer, 
+    NavBarInnerContainer,
+    RightContainer, 
+    LeftContainer, 
+    NavBarExtendedContainer,
+    NavBarLinkContainer,
+    OpenLinksButton,
+    Logo,
+    NavBarLink,
+    NavBarLinkExtended} from "../../styles/Navbar.style";
+import LogoImage from '../../assets/logo.png';
+import { FaBars } from "react-icons/fa";
+import { AiOutlineClose } from "react-icons/ai";
+
 const NavBar = () => {
+    const [extendedNavBar, setExtendedNavBar] = useState(false);
+
     return (
-        <>
-        <nav className='navGroup'>
-            <div className='navbarContainer'>
-            <div>
-                <h2 >
-                    <span><text className='logo'>manonabel</text></span>
-                </h2>
-            </div>
-            <div className='bigNav'>
-                <ul className='listNav'>
-                    <NavLink to="/" className="underlined"><li className='listItems'><p style={{color:'#fff'}}>Home</p></li></NavLink>
-                    <NavLink to="/contact" className="underlined"><li className='listItems'><p style={{color:'#fff'}}>Contact</p></li></NavLink>
-                    <NavLink to="/resume" className="underlined"><li className='listItems'><p style={{color:'#fff'}}>Resume</p></li></NavLink>
-                </ul>
-            </div>
-            </div>
-        </nav>
-        </>
+        <NavbarContainer extendedNavBar={extendedNavBar}>
+            <NavBarInnerContainer>
+            <LeftContainer>
+                <NavBarLinkContainer>
+                    <NavBarLink to="/" className="underlined">
+                        Home
+                    </NavBarLink>
+                    <NavBarLink to="/contact" className="underlined">
+                        Contact
+                    </NavBarLink>
+                    <NavBarLink to="/resume" className="underlined">
+                        Resume
+                    </NavBarLink>
+                    <OpenLinksButton onClick={() => {
+                        setExtendedNavBar((curr) => !curr);
+                    }}
+                    >
+                        {extendedNavBar ?  <AiOutlineClose size={40}/> :  <FaBars size={40} />}
+                    </OpenLinksButton>
+                </NavBarLinkContainer>
+            </LeftContainer>
+            <RightContainer>
+                <Logo src={LogoImage}/>
+            </RightContainer>
+            </NavBarInnerContainer>
+            {extendedNavBar && (
+                <NavBarExtendedContainer>
+                    <NavBarLinkExtended to="/" className="underlined" onClick={() => setExtendedNavBar(false)}>
+                        Home
+                    </NavBarLinkExtended>
+                    <NavBarLinkExtended to="/contact" className="underlined" onClick={() => setExtendedNavBar(false)}>
+                        Contact
+                    </NavBarLinkExtended>
+                    <NavBarLinkExtended to="/resume" className="underlined" onClick={() => setExtendedNavBar(false)}>
+                        Resume
+                    </NavBarLinkExtended>
+                </NavBarExtendedContainer>
+            )}
+        </NavbarContainer>
     )
 }
 

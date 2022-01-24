@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Resume.scss'
 import { FaPlaneDeparture,FaPizzaSlice,FaCameraRetro,FaPaw ,FaBook} from "react-icons/fa";
+import { GiBookshelf } from "react-icons/gi";
 
 const Resume = () => {
     return (
@@ -45,7 +46,7 @@ const Resume = () => {
                 <li><FaPlaneDeparture  size={30} className='iconsLikes'/></li>
                 <li><FaCameraRetro size={30} className='iconsLikes' /></li>
                 <li><FaPizzaSlice size={30} className='iconsLikes' /></li>
-                <li><FaBook size={30} className='iconsLikes' /></li>
+                <li><GiBookshelf size={30} className='iconsLikes' /></li>
             </ul>
             </div>
         </div>
