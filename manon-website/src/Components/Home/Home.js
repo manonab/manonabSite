@@ -36,7 +36,7 @@ const Home = () => {
             <h1 className='projectTitle'>Projets</h1>
             <div className='allCircle'>
                 <div className='websiteTitles'>
-                    <span class='cut-text'>websites</span>
+                    <span class='cut-text'>sites</span>
                     <div className='websiteCircle'>
                         <div className='circleProject'
                             style={{ backgroundImage: `url(${lanvestCapture})` }}>

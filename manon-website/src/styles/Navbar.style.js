@@ -8,10 +8,11 @@ export const NavbarContainer = styled.nav`
     display: flex;
     opacity: 0.6;
     flex-direction: column;
+
 `;
 
 export const LeftContainer = styled.div`
-    flex:70%;
+    flex:80%;
     display: flex;
     align-items:center;
     padding-left: 5%;
@@ -19,9 +20,10 @@ export const LeftContainer = styled.div`
 `;
 
 export const RightContainer = styled.div`
-    flex:30%;
+    flex:20%;
     display: flex;
     align-items:flex-end;
+
     padding-right: 50px;
     background-color:#013a63;
 `;

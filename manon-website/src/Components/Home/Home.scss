@@ -57,7 +57,7 @@ body{
 
 };
 .cut-text {
-    $random-text: 'websites';
+    $random-text: 'sites';
     position: relative;
     text-transform: uppercase;
     font-size: 80px;
@@ -147,7 +147,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: baseline;
 };
 .websiteTitles{
     display: flex;
@@ -258,9 +258,6 @@ body{
     .projectTitle{
         font-size: 40px;
     }
-    .allCircle{
-        flex-direction: column;
-    }
     .cut-app{
         font-size: 70px;
     }
@@ -287,5 +284,17 @@ body{
     }
     .groupTitles{
         display: none;
+    }
+
+}
+@media screen and (max-width:600px){
+    .home{
+        width: auto;
+        height: auto;
+        border-radius: 10%;
+    }
+    .home p{
+        font-size: 18px;
+        padding-bottom: 10px;
     }
 }

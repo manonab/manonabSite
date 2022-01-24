@@ -17,20 +17,19 @@ import { AiOutlineClose } from "react-icons/ai";
 
 const NavBar = () => {
     const [extendedNavBar, setExtendedNavBar] = useState(false);
-
     return (
         <NavbarContainer extendedNavBar={extendedNavBar}>
             <NavBarInnerContainer>
             <LeftContainer>
                 <NavBarLinkContainer>
                     <NavBarLink to="/" className="underlined">
-                        Home
+                        Accueil
                     </NavBarLink>
                     <NavBarLink to="/contact" className="underlined">
                         Contact
                     </NavBarLink>
                     <NavBarLink to="/resume" className="underlined">
-                        Resume
+                        C.V
                     </NavBarLink>
                     <OpenLinksButton onClick={() => {
                         setExtendedNavBar((curr) => !curr);
@@ -47,13 +46,13 @@ const NavBar = () => {
             {extendedNavBar && (
                 <NavBarExtendedContainer>
                     <NavBarLinkExtended to="/" className="underlined" onClick={() => setExtendedNavBar(false)}>
-                        Home
+                        Accueil
                     </NavBarLinkExtended>
                     <NavBarLinkExtended to="/contact" className="underlined" onClick={() => setExtendedNavBar(false)}>
                         Contact
                     </NavBarLinkExtended>
                     <NavBarLinkExtended to="/resume" className="underlined" onClick={() => setExtendedNavBar(false)}>
-                        Resume
+                        C.V
                     </NavBarLinkExtended>
                 </NavBarExtendedContainer>
             )}

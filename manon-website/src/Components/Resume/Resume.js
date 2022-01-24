@@ -7,7 +7,9 @@ import { GiBookshelf } from "react-icons/gi";
 const Resume = () => {
     return (
         <div>
-            <span class='cut-resume'>resume</span>
+            <div className='bigTitle'>
+            <span class='cut-resume'>CV</span>
+            </div>
             <div className='groupResume'>
             <span className='titles' style={{marginTop:"2em", marginBottom:'2em'}}>EXPERIENCES</span>
             <span className='experiencesGroup'>

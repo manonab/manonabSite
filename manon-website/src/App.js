@@ -1,4 +1,5 @@
 import './App.css';
+import React, {useState} from "react"
 import Home from './Components/Home/Home';
 import Contact from './Components/Contact/Contact';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -13,15 +14,17 @@ import Resume from './Components/Resume/Resume';
 import Chat from './Components/Contact/Chat';
 
 function App() {
+
+
   return (
     <Router>
         <Background />
-        <NavBar />
+        <NavBar/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/chat" element={<Chat />} />
-            <Route path="/resume" element={<Resume />} />
+            <Route path="/resume" element={<Resume />} /> 
             <Route path='/projects/lanvest' element={<Lanvest />} />
             <Route path='/projects/myseen' element={<Myseen />} />
             <Route path='/projects/geneaka' element={<Geneaka />} />
