@@ -15,17 +15,23 @@ const Home = () => {
             <div className='home'>
                     <h1 className='bigTitle' style={{ color: "#fff"}}>Manon Abel-coindoz</h1>
                     <h4 className='title'>Développeuse Full-Stack JavaScript</h4>
-                    <p style={{color:"#013a63",width:'85%',marginRight:"auto", marginLeft:'auto', marginTop:"10px"}}><b>React / React-Native / M.E.R.N</b></p>
-                    <p style={{color:"#013a63",width:'85%', textAlign:"left",marginRight:"auto"}}>
+                    <p><b>React / React-Native / M.E.R.N</b></p>
+                    <span className='groupHome'>
+                    <p>
                         J'ai commencé une reconversion professionnelle en 2019 avec une formation courte à la wild code school.
                         Ensuite j'ai débuté mon expérience au sein de <b>Focus Games</b> (Glasgow) afin de créer un outil marketing en interne avec <b>PHP/MySQL et JS</b>.
                     </p>
                     <br></br>
-                    <p style={{color:"#013a63",width:'85%', textAlign:"left",marginRight:"auto"}}>Après Focus Games j'ai créée une application de management en interne avec <b>React-Native, Node.js, MongoDB, Express.js</b> pour Lanvest.</p>
+                    <p>
+                        Après Focus Games j'ai créée une application de management en interne avec <b>React-Native, Node.js, MongoDB, Express.js</b> pour Lanvest.
+                    </p>
                     <br></br>
-                    <p style={{color:"#013a63",width:'85%', textAlign:"left",marginRight:"auto"}}>Aujourd'hui je suis à la recherche d'un contrat à durée indéterminé pour un projet qui allie professionnalisme et engagement. J'ai toujours été attirée par l'économie sociale et solidaire, je veux apporter mes compétences dans un projet qui a du sens.</p>
+                    <p>
+                        Aujourd'hui je suis à la recherche d'un contrat à durée indéterminé pour un projet qui allie professionnalisme et engagement. J'ai toujours été attirée par l'économie sociale et solidaire, je veux apporter mes compétences dans un projet qui a du sens.
+                    </p>
+                    </span>
             </div>
-            <div className='circle-app'><p style={{ textAlign: 'center' }}>mon app</p></div>
+            <div className='circle-app'><p style={{ textAlign: 'center' }}></p></div>
             <div className='line'></div>
             <h1 className='projectTitle'>Projets</h1>
             <div className='allCircle'>

@@ -1,5 +1,5 @@
 .footerG{
-    width: 100%;
+    width: auto;
     background-color: #073b4c;
     height: 200px;
     position: relative;
@@ -44,5 +44,8 @@
 .alink{
     color: #d9ed92;
 }
-.icons{
+@media screen and (max-width:700px) {
+    .footerG{
+        width:100%;
+    }
 }

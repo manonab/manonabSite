@@ -24,6 +24,32 @@ function Lanvest() {
                 <div className='videoGroup'>
                 <video src={lanvestVideo} className='videoLanvest' autoPlay loop muted></video>
                 </div>
+                <div className='boxDetailsHidden'>
+                <h4 className='resumeTitle'>Stack technique</h4>
+                <div className='iconsGroup'>
+                    <span className='icons'>
+                        <img src={reactNativeIcon} className='reactLogo' style={{ width: "40px" }} alt='reactLogo' />
+                    </span>
+                    <span className='icons'>
+                        <img src={gitIcons} className='reactLogo' style={{ width: "60px" }} alt='git logo' />
+                    </span>
+                    <span className='icons'>
+                        <img src={vscode} className='reactLogo' style={{ width: "40px" }} alt='vscode logo' />
+                    </span>
+                </div>
+                <p className='smallText'>N'hésitez pas à me contacter pour en savoir plus</p>
+                <NavLink
+                to="/contact" 
+                className="underlined">
+                <button 
+                style={{ marginBottom: "20px", marginTop: "15px" }} 
+                className='buttonLink'>
+                    <p style={{ color: '#fff' }}>
+                        Chat
+                    </p>
+                </button>
+                </NavLink>
+            </div>
             </div>
             <div className='boxDetails'>
                 <h4 className='resumeTitle'>Stack technique</h4>

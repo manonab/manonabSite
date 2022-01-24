@@ -118,6 +118,7 @@
       clip-path: $path;
     }
 }
+
 .boxDetails{
   background-color: #0077b6;
   border-radius: 10%;
@@ -128,10 +129,9 @@
   flex-direction: column;
   align-items: center;
   left: 75%;
-  // z-index: 2;
-  // opacity: 0.8;
   top: 200px;
 }
+
 .boxInfo{
   background-color: #0cc898;
   height: auto;
@@ -258,8 +258,53 @@
   width: 600px;
   height: auto;
 }
-
+.boxDetailsHidden{
+  display: none;
+}
 .videoGroup{
   background-color: transparent;
   z-index: 20;
+}
+@media screen and (max-width:1200px) {
+  .videoLanvest{
+    width: 450px;
+  }
+}
+
+@media screen and (max-width:1400px) {
+  .group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+  .boxDetails{
+    display: none;
+  }
+  .boxDetailsHidden{
+    background-color: #0077b6;
+    border-radius: 10%;
+    height: auto;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 200px;
+  }
+  .group div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width:750px) {
+  .videoLanvest{
+    width: 100%;
+    margin-right: auto;
+    margin-left:auto;
+  }
+  
 }

@@ -6,8 +6,7 @@ import { FaGithub,FaLinkedinIn,FaGooglePlusG } from "react-icons/fa";
 export default function Footer() {
     return (
         <div className='footerG'>
-            <p className='mailAdress'>abelcoindozm@gmail.com</p>
-            <p className='nameFooter'>@2022 Manon Abel-Coindoz</p>
+            <p className='nameFooter' style={{color:"#d9ed92"}}>@2022 Manon Abel-Coindoz</p>
             <ul className='iconGroup'>
                 <li className='icons'>
                     <a className='alink' href='https://www.linkedin.com/in/manon-abel-coindoz-b6449211a/' target={'_blank'}>
