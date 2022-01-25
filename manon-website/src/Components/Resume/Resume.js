@@ -42,7 +42,7 @@ const Resume = () => {
                 <p className='formation'>Brevet des techniciens supérieur en communication et industries graphiques.</p>
             </span>
             <div className='lineResume' style={{marginTop:"4em"}}></div>
-            <div className='titles' style={{marginTop:"2em", marginBottom:'2em'}}>About me</div>
+            <div className='titles' style={{marginTop:"2em", marginBottom:'2em'}}>Loisirs</div>
             <ul className='listLikes'>
                 <li><FaPaw  size={30} className='iconsLikes'/></li>
                 <li><FaPlaneDeparture  size={30} className='iconsLikes'/></li>

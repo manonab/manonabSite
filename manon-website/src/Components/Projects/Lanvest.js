@@ -45,7 +45,7 @@ function Lanvest() {
                 style={{ marginBottom: "20px", marginTop: "15px" }} 
                 className='buttonLink'>
                     <p style={{ color: '#fff' }}>
-                        Chat
+                        Contact
                     </p>
                 </button>
                 </NavLink>

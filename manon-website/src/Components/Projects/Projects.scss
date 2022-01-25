@@ -1,3 +1,4 @@
+//big titles
 .cut-myseen {
     $random-text: 'my s.E.E.N';
     position: relative;
@@ -118,7 +119,7 @@
       clip-path: $path;
     }
 }
-
+//box stack technique
 .boxDetails{
   background-color: #0077b6;
   border-radius: 10%;
@@ -131,7 +132,7 @@
   left: 75%;
   top: 200px;
 }
-
+//box with 
 .boxInfo{
   background-color: #0cc898;
   height: auto;
@@ -252,7 +253,9 @@
   width: 70%;
 }
 .video{
-  width: 300px;
+  width: 250px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .videoLanvest{
   width: 600px;
@@ -260,10 +263,6 @@
 }
 .boxDetailsHidden{
   display: none;
-}
-.videoGroup{
-  background-color: transparent;
-  z-index: 20;
 }
 @media screen and (max-width:1200px) {
   .videoLanvest{
@@ -277,10 +276,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    width: 100%;
+    width: auto;
     height: auto;
-    padding: 0;
-    margin: 0;
+  }
+  .groupMySeen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: auto;
+    height: auto;
+  }
+  .boxInfo{
+    width: 50%;
+  }
+  .boxInfo h1{
+    text-align: center;
+  }
+  .buttonWebsite{
+    width: auto;
   }
   .boxDetails{
     display: none;
@@ -289,7 +303,7 @@
     background-color: #0077b6;
     border-radius: 10%;
     height: auto;
-    width: 280px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -301,10 +315,38 @@
   }
 }
 @media screen and (max-width:750px) {
-  .videoLanvest{
-    width: 100%;
-    margin-right: auto;
-    margin-left:auto;
+  .resumeTitle{
+    text-align: center;
   }
-  
+  .group{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .boxDetailsHidden{
+    width: auto;
+    height: auto;
+    padding: 5px;
+  }
+  .boxInfo{
+    left:0;
+    width: 90%;
+    margin: 0;
+    padding: 8px;
+    height: auto;
+  }
+  .cut-myseen{
+    font-size: 60px;
+  }
+  .cut-bunny{
+    font-size: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  // .bigTitle{
+  //   padding: 15px;
+  // }
 }

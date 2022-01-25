@@ -17,9 +17,6 @@ function BunnyFinder() {
                     <h4 className='resumeTitle'>En bref</h4>
                     <p className='textResume'>Bunny Finder est un projet personnel dans le but d'aider les propriétaires de lapins a mieux comprendre et gérer leurs lapin.</p>
                     <p className='textResume'>Elle est en cours de développement. Idéalement une fois terminé l'utilisateur pourra accèder a la liste des aliments autorisés pour les lapins, liste des vétérinaires N.A.C et bien d'autres fonctionnalités.</p>
-                    <a href='https://www.geneaka.fr' target='_blank'>
-                        Visiter le site
-                    </a>
                 </div>
                 {/* <div className='videoGroup'>
                 <video src={geneakaVideo} className='videoLanvest' autoPlay loop muted></video>
@@ -52,7 +49,7 @@ function BunnyFinder() {
                 style={{ marginBottom: "20px", marginTop: "15px" }} 
                 className='buttonLink'>
                     <p style={{ color: '#fff' }}>
-                        Chat
+                        Contact
                     </p>
                 </button>
                 </NavLink>             
