@@ -33,6 +33,36 @@
       clip-path: $path;
     }
 };
+.cut-resumeEng{
+    $random-text: 'Resume';
+    position: relative;
+    text-transform: uppercase;
+    font-size: 80px;
+    color: transparent;
+    font-weight: 400;
+    font-family: 'Catamaran', sans-serif;
+    font-style: italic;
+
+    &:after {
+      content: $random-text;
+      position: absolute;
+      left: -10px;
+      top: -2px;
+      color: white;
+      $path: polygon(0 25%, 100% 65%, 100% 100%, 0% 100%);
+      -webkit-clip-path: $path;
+      clip-path: $path;
+    }
+    
+    &:before {
+      content: $random-text;
+      position: absolute;
+      color: white;
+      $path: polygon(0 0, 110% 0, 100% 65%, 0 25%);
+      -webkit-clip-path: $path;
+      clip-path: $path;
+    }
+};
 .groupResume{
     display: flex;
     flex-direction: column;
@@ -53,6 +83,7 @@
 .lineResume{
     border-bottom:2px solid #b5e48c;
     width: 450px;
+    margin-top: 20px;
 }
 .experiencesGroup{
     display: flex;
@@ -150,6 +181,9 @@ button{
         margin: 0;
     }
     .cut-resume{
+        margin: 20px;
+    }    
+    .cut-resumeEng{
         margin: 20px;
     }
     .lineResume{

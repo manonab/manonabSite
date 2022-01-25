@@ -5,13 +5,15 @@ import lanvestVideo from "../../assets/lanvestVideo.mp4"
 import gitIcons from '../../assets/gitIcons.png';
 import { NavLink } from 'react-router-dom';
 
-function Lanvest() {
+function Lanvest({switchLanguage}) {
 
     return (
         <div>
             <div className='bigTitle'>
                 <span class='cut-lanvest'>LANVEST</span>
             </div>
+            {switchLanguage ? 
+            <>
             <div className='group'>
                 <div className='boxInfo'>
                     <h4 className='resumeTitle'>En bref</h4>
@@ -25,7 +27,7 @@ function Lanvest() {
                 <video src={lanvestVideo} className='videoLanvest' autoPlay loop muted></video>
                 </div>
                 <div className='boxDetailsHidden'>
-                <h4 className='resumeTitle'>Stack technique</h4>
+                <h4 className='resumeTitle'>Outils technique</h4>
                 <div className='iconsGroup'>
                     <span className='icons'>
                         <img src={reactNativeIcon} className='reactLogo' style={{ width: "40px" }} alt='reactLogo' />
@@ -37,7 +39,7 @@ function Lanvest() {
                         <img src={vscode} className='reactLogo' style={{ width: "40px" }} alt='vscode logo' />
                     </span>
                 </div>
-                <p className='smallText'>N'hésitez pas à me contacter pour en savoir plus</p>
+                <p className='smallText'>N'hésitez pas à me contacter pour en savoir plus.</p>
                 <NavLink
                 to="/contact" 
                 className="underlined">
@@ -64,7 +66,7 @@ function Lanvest() {
                         <img src={vscode} className='reactLogo' style={{ width: "40px" }} alt='vscode logo' />
                     </span>
                 </div>
-                <p className='smallText'>N'hésitez pas à me contacter pour en savoir plus</p>
+                <p className='smallText'>N'hésitez pas à me contacter pour en savoir plus.</p>
                 <NavLink
                 to="/contact" 
                 className="underlined">
@@ -72,11 +74,80 @@ function Lanvest() {
                 style={{ marginBottom: "20px", marginTop: "15px" }} 
                 className='buttonLink'>
                     <p style={{ color: '#fff' }}>
-                        Chat
+                        Contact
                     </p>
                 </button>
                 </NavLink>
             </div>
+            </>
+            :
+            <>
+                <div className='group'>
+                <div className='boxInfo'>
+                    <h4 className='resumeTitle'>In short</h4>
+                    <p className='textResume'>Lanvest is the company that needed the MY S.E.E.N project , they wanted an application that will help them to manage better their company.</p>
+                    <p className='textResume'>They needed a website to introduce the MY S.E.E.N project.</p>
+                    <a href='https://lanvest.fr/' className='buttonWebsite' target='_blank'>
+                        <p  style={{ color: '#fff', textAlign:'center' }}>Visit the website</p>
+                    </a>
+                </div>
+                <div className='videoGroup'>
+                <video src={lanvestVideo} className='videoLanvest' autoPlay loop muted></video>
+                </div>
+                <div className='boxDetailsHidden'>
+                <h4 className='resumeTitle'>Technical tools</h4>
+                <div className='iconsGroup'>
+                    <span className='icons'>
+                        <img src={reactNativeIcon} className='reactLogo' style={{ width: "40px" }} alt='reactLogo' />
+                    </span>
+                    <span className='icons'>
+                        <img src={gitIcons} className='reactLogo' style={{ width: "60px" }} alt='git logo' />
+                    </span>
+                    <span className='icons'>
+                        <img src={vscode} className='reactLogo' style={{ width: "40px" }} alt='vscode logo' />
+                    </span>
+                </div>
+                <p className='smallText'>Please, do not hesitate to reach me out</p>
+                <NavLink
+                to="/contact" 
+                className="underlined">
+                <button 
+                style={{ marginBottom: "20px", marginTop: "15px" }} 
+                className='buttonLink'>
+                    <p style={{ color: '#fff' }}>
+                        Contact
+                    </p>
+                </button>
+                </NavLink>
+            </div>
+            </div>
+            <div className='boxDetails'>
+            <h4 className='resumeTitle'>Technical tools</h4>
+                <div className='iconsGroup'>
+                    <span className='icons'>
+                        <img src={reactNativeIcon} className='reactLogo' style={{ width: "40px" }} alt='reactLogo' />
+                    </span>
+                    <span className='icons'>
+                        <img src={gitIcons} className='reactLogo' style={{ width: "60px" }} alt='git logo' />
+                    </span>
+                    <span className='icons'>
+                        <img src={vscode} className='reactLogo' style={{ width: "40px" }} alt='vscode logo' />
+                    </span>
+                </div>
+                <p className='smallText'>Please, do not hesitate to reach me out</p>
+                <NavLink
+                to="/contact" 
+                className="underlined">
+                <button 
+                style={{ marginBottom: "20px", marginTop: "15px" }} 
+                className='buttonLink'>
+                    <p style={{ color: '#fff' }}>
+                        Contact
+                    </p>
+                </button>
+                </NavLink>
+            </div>
+            </>}
         </div>
     )
 }

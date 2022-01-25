@@ -84,6 +84,36 @@ body{
       clip-path: $path;
     }
 };
+.cut-englishText {
+    $random-text: 'websites';
+    position: relative;
+    text-transform: uppercase;
+    font-size: 80px;
+    color: transparent;
+    font-weight: 400;
+    font-family: 'Catamaran', sans-serif;
+    font-style: italic;
+
+    &:after {
+      content: $random-text;
+      position: absolute;
+      left: -10px;
+      top: -2px;
+      color: white;
+      $path: polygon(0 25%, 100% 65%, 100% 100%, 0% 100%);
+      -webkit-clip-path: $path;
+      clip-path: $path;
+    }
+    
+    &:before {
+      content: $random-text;
+      position: absolute;
+      color: white;
+      $path: polygon(0 0, 110% 0, 100% 65%, 0 25%);
+      -webkit-clip-path: $path;
+      clip-path: $path;
+    }
+};
 .cut-app {
     $random-text: 'Apps';
     position: relative;
@@ -262,6 +292,9 @@ body{
     .cut-text{
         font-size: 70px;
     }
+    .cut-englishText{
+        font-size: 70px;
+    }
     .home p {
         font-size: 16px;
         text-align: left;
@@ -277,6 +310,9 @@ body{
         width: 100%;
     }
     .cut-text{
+        font-size: 50px;
+    }
+    .cut-englishText{
         font-size: 50px;
     }
     .websiteCircle{

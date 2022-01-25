@@ -2,3 +2,30 @@
     margin: 0;
     padding: 0;
 }
+.flag{
+    cursor: pointer;
+}
+.flag img{
+    width: 25px;
+    height: auto;
+    padding: 10px;
+}
+.flags{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+@media screen and (max-width:600px) {
+    .flags{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .flag img{
+        width: 20px;
+        height: auto;
+    }
+}
