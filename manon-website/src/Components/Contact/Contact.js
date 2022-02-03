@@ -11,26 +11,31 @@ const Contact = ({ switchLanguage }) => {
     const [content, setContent] = useState('');
     const [email, setEmail] = useState('');
 
-    const sendForm = async (e) => {
-        e.preventDefault()
-        try {
-            await axios.post('https://manonwebsite.herokuapp.com/post_name', {
-                "name":name,
-                "company":company,
-                "content":content,
-                "email":email
-            })
-        } catch (err) { console.log(err) }
-    };
+    const [modal, setModal] = useState(false);
+
+    const sendForm = async () => {
+        let post = await axios.post('https://manonwebsite.herokuapp.com/post_name', {
+            "name": name,
+            "company": company,
+            "content": content,
+            "email": email
+        })
+        .catch((err) => console.log(err))
+        };
     return (
         <div>
             <div className='bigTitle'>
                 <span class='cut-contact'>Contact</span>
             </div>
+            {modal ?  
+            <div>
+                <h1>Message envoyé !</h1>
+            </div>
+            :null}
             {switchLanguage ?
                 <>
                     <p className='paragraph'>Vous pouvez me contacter via <FaLinkedinIn color='gold' />, ou via l'adresse suivante: <b style={{ color: 'gold' }}>abelcoindozm@gmail.com</b> ou alors directement via ce formulaire.</p>
-                    <form className='form'>
+                    <form className='form' onSubmit={(e) => sendForm(e)}>
                         <h4 className='titleForm'>Votre nom</h4>
                         <input value={name} required placeholder='nom' onChange={(e) => setName(e.target.value)}></input>
                         <h4 className='titleForm'>Votre entreprise</h4>
@@ -39,7 +44,7 @@ const Contact = ({ switchLanguage }) => {
                         <textarea required placeholder='message' onChange={(e) => setContent(e.target.value)}></textarea>
                         <h4 className='titleForm'>Où puis-je vous contacter ?</h4>
                         <input value={email} required placeholder='adresse email' onChange={(e) => setEmail(e.target.value)}></input>
-                        <button type="submit" onClick={() => sendForm()}>ENVOYER</button>
+                        <button type="submit">ENVOYER</button>
                     </form>
                 </>
                 :
@@ -53,7 +58,7 @@ const Contact = ({ switchLanguage }) => {
                                 <FaLinkedinIn size={30} style={{marginLeft:"05px", marginRight:'05px'}} />
                             </a>
                         </span>, or here: <b style={{ color: 'gold' }}>abelcoindozm@gmail.com</b> or directly via this form.</p>
-                    <form className='form'>
+                    <form className='form' onSubmit={(e) => sendForm(e)}>
                         <h4 className='titleForm'>Your name</h4>
                         <input value={name} required placeholder='name' onChange={(e) => setName(e.target.value)}></input>
                         <h4 className='titleForm'>Your company</h4>
@@ -62,7 +67,7 @@ const Contact = ({ switchLanguage }) => {
                         <textarea required placeholder='message' onChange={(e) => setContent(e.target.value)}></textarea>
                         <h4 className='titleForm'>Where can I reach you out ?</h4>
                         <input value={email} required placeholder='email adress' onChange={(e) => setEmail(e.target.value)}></input>
-                        <button type="submit" onClick={() => sendForm()}>SEND</button>
+                        <button type="submit">SEND</button>
                     </form>
                 </>
             }
