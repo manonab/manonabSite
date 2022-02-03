@@ -14,11 +14,11 @@ const Contact = ({ switchLanguage }) => {
     const sendForm = async (e) => {
         e.preventDefault()
         try {
-            await axios.post('http://localhost:4000/post_name', {
-                name,
-                company,
-                content,
-                email
+            await axios.post('https://manonwebsite.herokuapp.com/post_name', {
+                "name":name,
+                "company":company,
+                "content":content,
+                "email":email
             })
         } catch (err) { console.log(err) }
     };

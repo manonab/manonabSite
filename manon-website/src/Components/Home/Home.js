@@ -3,7 +3,7 @@ import './Home.scss';
 import lanvestCapture from "../../assets/lanvestCapture.png";
 import geneakaCapture from "../../assets/geneakaCapture.png";
 import mySeenCapture from "../../assets/mySeenCapture.jpg";
-import manon from "../../assets/moiMeme.jpg";
+import manon from "../../assets/moiMeme.jpg"
 import { NavLink } from 'react-router-dom';
 import axios from 'axios';
 

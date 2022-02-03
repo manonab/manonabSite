@@ -1,4 +1,3 @@
-require('./config/db');
 require('dotenv').config();
 const cors = require('cors');
 
@@ -13,9 +12,6 @@ app.use(express.urlencoded({extended:true}))
 const PORT = process.env.PORT || 4000
 //nodemailer part
 const nodemailer = require('nodemailer');
-
-
-
 
 app.get('/', cors(), async(req,res) => {
     res.send('this is working')
