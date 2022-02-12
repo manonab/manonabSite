@@ -1,31 +1,37 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import { NavLink } from 'react-router-dom';
+import Montserrat from "../assets/Fonts/Monsterrat/Montserrat-Light.ttf"
+
+export const fontFaces = css`
+  @font-face {
+    font-family: 'Montserrat-Light';
+    src: url(${Montserrat});
+    font-style: normal;
+  }
+`;
 
 export const NavbarContainer = styled.nav`
     width: auto;
     height: ${(props) => (props.extendedNavBar ? "100vh" : "80px")};
-    background-color:#013a63;
+    background-color:#973465;
     display: flex;
-    opacity: 0.6;
+    opacity: 1;
     flex-direction: column;
-
 `;
 
 export const LeftContainer = styled.div`
-    flex:80%;
+    flex:100%;
     display: flex;
-    align-items:center;
     padding-left: 5%;
-    background-color:#013a63;
+    background-color:#973465;
 `;
 
 export const RightContainer = styled.div`
-    flex:20%;
+    flex:40%;
     display: flex;
-    align-items:flex-end;
-
+    align-items:center;
     padding-right: 50px;
-    background-color:#013a63;
+    background-color:#973465;
 `;
 export const NavBarInnerContainer = styled.div`
     width: 100%;
@@ -41,6 +47,7 @@ color: white;
 text-decoration: none;
 font-weight: 100;
 letter-spacing: 2px;
+
 text-transform: uppercase;
 font-family: 'Montserrat', sans-serif;
 margin: 10px;
