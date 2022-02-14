@@ -6,13 +6,11 @@ body{
     margin: 0;
     padding: 0;
     width: auto;
-    
 };
 .circle-app{
     width: 150px;
     height: 150px;
     z-index: 999;
-    
     bottom: 10em;
     position: fixed;
     box-shadow: 0 2px 8px #000;
@@ -112,8 +110,7 @@ body{
     justify-content:space-between;
     width: 50%;
 }
-
-button{
+.button{
     width: 150px;
     border: none;
     padding: 15px;
@@ -121,6 +118,7 @@ button{
     background-color:#973465;
     cursor: pointer;
     margin-top: 2em;
+    font-weight: 300;
     font-family: "Montserrat", sans-serif;
     color: #fff;
     font-size: 18px;
@@ -138,6 +136,7 @@ button{
     flex-direction: row;
     align-items: center;
     width: 50%;
+    margin-top: -2em;
     justify-content: space-around;
     position: relative;
     top: 50px;
@@ -147,6 +146,9 @@ button{
 }
 .textEnd p{
     letter-spacing: 0.1em;
+}
+.textDEv{
+    font-family: "Montserrat", sans-serif;
 }
 //responsive
 

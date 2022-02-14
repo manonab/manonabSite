@@ -5,7 +5,7 @@ import { AiOutlineForm } from "react-icons/ai";
 import {NavLink} from 'react-router-dom';
 import { MdEmail } from "react-icons/md";
 
-function Develop() {
+const Develop = () => {
   return (
     <>
       <div className="testHome">
@@ -19,12 +19,12 @@ function Develop() {
           />
         </div>
         <div className="textEnd">
-          <p>
+          <p className="textDEv"> 
             Et si maintenant on s'appelait ? Si mon univers t'as parlé,
             n'hésites pas à me contacter par mail (abelcoindozm@gmail.com) ou à
             me laisser un message sur LinkedIn.
           </p>
-          <p>Tu peux découvrir mon compte GitHub pour toujours plus de code.</p>
+          <p className="textDEv">Tu peux découvrir mon compte GitHub pour toujours plus de code.</p>
         </div>
         <ul className="iconGroup">
           <li>
