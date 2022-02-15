@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.scss";
-
+import { NavLink } from "react-router-dom";
 const Presentation = () => {
 
     return(
@@ -23,9 +23,10 @@ const Presentation = () => {
             the readable content of a page when looking at its layout.
           </p>
         </div>
+        <NavLink to={"/code"}>
         <button className="buttonMe">voir mes projets</button>
+        </NavLink>
         </div>
-
         </div>
     )
 }

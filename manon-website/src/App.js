@@ -8,6 +8,7 @@ import MySeen from './Components/MySeen/MySeen';
 import Presentation from './Components/AboutMe/Presentation';
 import Geneaka from './Components/Geneaka/Geneaka';
 import Lanvest from './Components/Lanvest/Lanvest';
+import Code from './Components/Home/Code';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home switchLanguage={switchLanguage}/>} />
         <Route path="/contact" element={<Contact switchLanguage={switchLanguage}/>} />
+        <Route path="/code" element={<Code switchLanguage={switchLanguage}/>} />
         <Route path="/presentation" element={<Presentation switchLanguage={switchLanguage}/>} />
         <Route path='/projects/lanvest' element={<Lanvest switchLanguage={switchLanguage} />} />
         <Route path='/projects/myseen' element={<MySeen switchLanguage={switchLanguage}/>} />

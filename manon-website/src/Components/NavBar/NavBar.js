@@ -15,7 +15,7 @@ import {
 import LogoImage from "../../assets/logo.png";
 import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
-
+import Code from '../Home/Code'
 const NavBar = ({ switchLanguage }) => {
   const [extendedNavBar, setExtendedNavBar] = useState(false);
   return (
@@ -39,13 +39,13 @@ const NavBar = ({ switchLanguage }) => {
             )}
             {switchLanguage ? (
               <>
-                <NavBarLink to="/resume" className="underlined">
+                <NavBarLink to="/code" className="underlined">
                   Projets
                 </NavBarLink>
               </>
             ) : (
               <>
-                <NavBarLink to="/resume" className="underlined">
+                <NavBarLink to="/code" className="underlined">
                   Projects
                 </NavBarLink>
               </>
