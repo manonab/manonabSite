@@ -35,9 +35,25 @@
     padding: 30px;
     background-color: #973465;
     width: 75px;
-    position: sticky;
-    margin: 2em;
-    top: 160px;
+    position: relative;
     height: 75px;
+    display: block;
     box-shadow: 3px 3px 3px #000;
+}
+.buttonL{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 999;
+    position: fixed;
+    margin-left: 87%;
+    top: 300px;
+}
+.close{
+    position: relative;
+    bottom: 40px;
+    right: 30px;
+    padding: 30px;
+    margin: 5px;
 }
