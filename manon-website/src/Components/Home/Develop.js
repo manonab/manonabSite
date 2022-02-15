@@ -16,17 +16,14 @@ const Develop = ({ switchLanguage }) => {
   const [modal, setModal] = useState(false);
 
   const sendForm = async () => {
-    console.log(name, company, content, email)
-    let post = await axios
-      .post("https://manonwebsite.herokuapp.com/post_name", {
-        name: name,
-        company: company,
-        content: content,
-        email: email,
-      })
-      .then(() => console.log('message sent'))
-      .catch((err) => console.log(err));
-  };
+    let post = await axios.post('https://manonwebsite.herokuapp.com/post_name', {
+        "name": name,
+        "company": company,
+        "content": content,
+        "email": email
+    })
+    .catch((err) => console.log(err))
+    };
 
   return (
     <div className="goupe">
