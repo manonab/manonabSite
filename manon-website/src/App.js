@@ -5,7 +5,6 @@ import Contact from './Components/Contact/Contact';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from './Components/NavBar/NavBar';
 import MySeen from './Components/MySeen/MySeen';
-import BunnyFinder from './Components/Projects/BunnyFinder';
 import Presentation from './Components/AboutMe/Presentation';
 import Geneaka from './Components/Geneaka/Geneaka';
 import Lanvest from './Components/Lanvest/Lanvest';
@@ -37,7 +36,6 @@ function App() {
         <Route path='/projects/lanvest' element={<Lanvest switchLanguage={switchLanguage} />} />
         <Route path='/projects/myseen' element={<MySeen switchLanguage={switchLanguage}/>} />
         <Route path='/projects/geneaka' element={<Geneaka switchLanguage={switchLanguage}/>} />
-        <Route path='/projects/bunnyFinder' element={<BunnyFinder switchLanguage={switchLanguage}/>} />
       </Routes>
     </Router>
   );

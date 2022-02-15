@@ -1,6 +1,7 @@
 import React from 'react'
 import myseenvideo01 from "../../assets/myseenvideo01.mp4";
-import './MySeen.scss'
+import './MySeen.scss';
+
 const Presentation = () => {
   return (
     <div className="component">

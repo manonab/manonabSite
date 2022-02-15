@@ -6,6 +6,7 @@ import mongodbicon from '../../assets/mongodbicon.png';
 import nodejsIcon from '../../assets/nodejsIcon.svg';
 import vscode from '../../assets/vscode.png';
 import gitIcons from '../../assets/gitIcons.png';
+import { NavLink } from "react-router-dom";
 
 const Presentation = () => {
   return (
@@ -64,10 +65,14 @@ const Presentation = () => {
           ></video>
         </div>
       </div>
-      <h4 className='titleP'>Les autres projets...</h4>
-      <div className='buttonGroup'>
-      <button className='buttonStack'>Lanvest</button>
-      <button className='buttonStack'>geneaka</button>
+      <h4 className="titleP">Les autres projets...</h4>
+      <div className="buttonGroup">
+        <NavLink to={"/projects/lanvest"}>
+          <button className="buttonStack">Lanvest</button>
+        </NavLink>
+        <NavLink to={"/projects/geneaka"}>
+          <button className="buttonStack">Geneaka</button>
+        </NavLink>
       </div>
     </div>
   );

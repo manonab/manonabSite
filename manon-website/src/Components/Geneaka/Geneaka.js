@@ -1,13 +1,15 @@
 import React from "react";
-import Technique from "../Lanvest/Technique";
+import Technique from "./Technique";
 import Presentation from "./Presentation";
+import ReactPageScroller from "react-page-scroller";
 
 
 const Geneaka = () => {
     return(
-        <>
-        Welcome from Home
-        </>
+        <ReactPageScroller>
+            <Presentation />
+            <Technique />
+        </ReactPageScroller>
     )
 }
 

@@ -1,13 +1,15 @@
 import React from "react";
 import Presentation from "./Presentation";
-import Technique from './Technique';
+import Technique from "./Technique";
+import ReactPageScroller from "react-page-scroller";
 
 const Lanvest = () => {
-    return(
-        <>
-        Welcome from Home
-        </>
-    )
-}
+  return (
+    <ReactPageScroller>
+      <Presentation />
+      <Technique />
+    </ReactPageScroller>
+  );
+};
 
 export default Lanvest;
